@@ -312,10 +312,19 @@ aside{
 	font-size: 8vw;
 	color: #555;
 	user-select: none;
+	padding-bottom: 15px;
+	border-bottom: 5px solid transparent;
+	transition: color .3s, border-bottom-color .5s, transform .5s;
 
 }
 .aside__nav-list a{
 	user-select: none;
+}
+
+.aside__nav-list i:hover{
+	color: #ed3000;
+	border-bottom-color: #ff1000;
+	transform: translateY(-15px);
 }
 
 footer{
@@ -435,7 +444,7 @@ footer{
 	}
 
 	to{
-		border-color: #f10;
+		border-color: #f20;
 	}
 
 }
