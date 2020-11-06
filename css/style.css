@@ -1,9 +1,9 @@
 *{
-	scroll-behavior: smooth;
 }
 
 body{
 	background-color: #000;
+	scroll-behavior: smooth;
 
 }
 
@@ -106,6 +106,7 @@ article{
 	justify-content: center;
 	height: 100%;
 	align-items: center;
+	width: 100%;
 
 }
 
@@ -114,6 +115,9 @@ article{
 	display: inline-block;
 	position: absolute;
 	height: 100%;
+	width: 100%;
+	text-align: center;
+
 }
 
 
@@ -121,13 +125,14 @@ article{
 
 }
 .home-slider li:nth-child(3){
-	height: 86%;
+	height: 88%;
 	align-self: flex-end;
 }
 
 .home-slider-img{
 	height: 100%;
 	object-fit: cover;
+
 }
 
 .img-a{
@@ -194,7 +199,8 @@ article{
 
 .skills-img__contain{
 	display: inline-block;
-	height: 25%;
+	height: 15vh;
+	width: 15vh;
 	background-color: #111;
 	border-radius: 50%;
 	overflow: hidden;
