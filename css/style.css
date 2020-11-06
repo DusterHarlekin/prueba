@@ -212,6 +212,7 @@ article{
 	height: 100%;
 	transition: opacity .5s;
 	object-fit: cover;
+	user-select: none;
 }
 
 .skills-img__contain:first-child{
@@ -250,6 +251,7 @@ article{
 	border-top: 5px solid #333;
 	border-bottom: 5px solid #333;
 	transition: opacity .3s;
+	user-select: none;
 }
 
 .skills-img__contain:hover{
@@ -309,7 +311,11 @@ aside{
 .aside__nav-list i{
 	font-size: 8vw;
 	color: #555;
+	user-select: none;
 
+}
+.aside__nav-list a{
+	user-select: none;
 }
 
 footer{
