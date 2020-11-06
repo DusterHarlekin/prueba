@@ -1,9 +1,9 @@
-*{
+html{
+	scroll-behavior: smooth;
 }
 
 body{
 	background-color: #000;
-	scroll-behavior: smooth;
 
 }
 
@@ -290,6 +290,7 @@ aside{
 	display: flex;
 	align-content: center;
 	position: relative;
+	z-index: 850;
 
 }
 
@@ -302,7 +303,7 @@ aside{
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	border: 3px solid #333;
+	outline: 3px solid #333;
 	z-index: 900;
 
 }
