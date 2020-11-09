@@ -19,6 +19,7 @@ img{
 	text-shadow: 2px 2px 2px #000;
 	text-align: center;
 	letter-spacing: 3px;
+	margin: 30px 0;
 }
 .container{
 	display: grid;
@@ -59,6 +60,7 @@ header{
 	font-size: 100px;
 	display: inline-block;
 	margin: 0 10px;
+	user-select: none;
 }
 
 .title__div{
@@ -69,6 +71,7 @@ header{
 	border-radius: 20px;
 	font-family: 'Staatliches', cursive;
 	font-size: 100px;
+	user-select: none;
 }
 
 article{
@@ -197,7 +200,7 @@ article{
 	justify-content: space-around;
 }
 
-.skills-img__contain{
+.circle-img__contain{
 	display: inline-block;
 	height: 15vh;
 	width: 15vh;
@@ -214,26 +217,26 @@ article{
 	flex-shrink: 0;
 }
 
-.skills-img{
+.circle-img{
 	height: 100%;
 	transition: opacity .5s;
 	object-fit: cover;
 	user-select: none;
 }
 
-.skills-img__contain:first-child{
+#skills .circle-img__contain:first-child{
 	background: #e04f29;
 }
 
-.skills-img__contain:nth-child(2){
+#skills .circle-img__contain:nth-child(2){
 	background: #39d;
 }
 
-.skills-img__contain:nth-child(3){
+#skills .circle-img__contain:nth-child(3){
 	background: #000; 
 }
 
-.skills-img__container{
+.circle-img__container{
 	display: flex;
 	width: 100%;
 	height: 80%;
@@ -242,7 +245,7 @@ article{
 	align-items: center;
 }
 
-.skills-img__text{
+.circle-img__text{
 	color: #fff;
 	font-size: 65px;
 	display: inline-block;
@@ -260,23 +263,60 @@ article{
 	user-select: none;
 }
 
-.skills-img__contain:hover{
-	background: #222;
-	transform: translateY(-15px);
-	animation: imgcontainer .5s infinite alternate;
-	border-width: 10px;
-}
 
-.skills-img__contain:hover > .skills-img{
+
+.circle-img__contain:hover > .circle-img{
 	opacity: .1;
 }
 
-.skills-img__contain:hover > .skills-img__text{
+.circle-img__contain:hover > .circle-img__text{
 	opacity: 1;
+}
+
+.circle-a{
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+	color: #fff;
+}
+
+.circle-a:hover > .circle-img{
+	opacity: .1;
 }
 
 #projects{
 	grid-row: 7/span 3;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.projects-img__container{
+	height: 40%;
+	width: 100%;
+	text-align: center;
+	margin: 20px 0px;
+}
+
+.projects-img{
+	height: 100%;
+	object-fit: cover;
+}
+
+#projects .circle-img__contain:nth-child(4) .circle-img{
+	width: 100%; 
+}
+#projects .circle-img__text{
+	font-size: 45px;
+}
+
+#projects .circle-img__contain:nth-child(3){
+	background: #fff;
+}
+
+#projects .circle-img__contain:nth-child(3) .circle-img{
+	object-fit: contain;
+	height: 80%;
 }
 
 #contact{
@@ -447,12 +487,19 @@ footer{
 
 @keyframes imgcontainer{
 	from{
-		border-color: #d00;
+		border-color: transparent;
 	}
 
 	to{
-		border-color: #f20;
+		border-color: #e10;
 	}
 
+}
+
+#projects .circle-img__contain:hover, #skills .circle-img__contain:hover{
+	background: #222;
+	transform: translateY(-15px);
+	animation: imgcontainer .5s infinite alternate;
+	border-width: 10px;
 }
 

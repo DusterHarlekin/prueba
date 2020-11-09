@@ -1,0 +1,75 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	min-height: 100vh;
+	background-image: linear-gradient(-45deg, #FFF4ED 50%, #400200 50%);
+	font-family: 'Haettenschweiler';
+	font-weight: 700;
+
+}
+.titulo{
+	font-size: 60px;
+	font-family: 'Freestyle Script';
+	margin-bottom: 40px;
+	color: #fff;
+}
+
+.subtitulo{
+	margin: 0;
+	color: #000;
+	display: inline;
+	font-size: 40px;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-shadow: white 0.1em 0.1em 0.2em;
+}
+
+.contenido{
+	color:#fff;
+	margin: 7px 0;
+	font-size: 50px;
+	font-weight: 600;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	font-family: 'Freestyle Script';
+	margin-top: 0;
+}
+
+.linea-division{
+	width: 80%;
+	height: 2px;
+	background-color: #36221c;
+}
+
+/* Estilos de materialize*/
+
+.carousel{
+	min-height: 400px;
+}
+
+.carousel .carousel-item{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+	width: 500px;
+	height: 500px;
+}
+
+.carousel .carousel-item img{
+	
+	object-fit: cover;
+	position: absolute;
+	z-index: -1;
+	border-radius: 15px;
+}
+
+.carousel .indicators .indicator-item {
+	border-radius: 0;
+	transform: rotate(45deg);
+	margin: 0 15px;
+	background: #36221c;
+}
