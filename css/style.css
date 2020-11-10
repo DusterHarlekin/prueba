@@ -330,6 +330,7 @@ article{
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+	user-select: none;
 }
 .contact-icon__li{
 	font-size: 11vh;
@@ -338,6 +339,7 @@ article{
 	margin: 0 30px;
 	border-bottom: 10px solid transparent;
 	transition: border-bottom-color .5s, color .5s, transform .3s;
+	user-select: none;
 
 }
 
@@ -360,6 +362,7 @@ article{
 	color: transparent;
 	font-family: 'Righteous', cursive;
 	transition: color .5s;
+	user-select: none;
 }
 
 aside{
