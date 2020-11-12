@@ -575,9 +575,9 @@ footer{
 	.section__title{
 		order: 1;
 		width: 100%;
-		font-size: 60px;
+		font-size: 50px;
 		margin: 0;
-		min-width: 900px
+		min-width: 991px
 	}
 
 	.home-slider{
