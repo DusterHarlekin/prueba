@@ -1,0 +1,301 @@
+body{
+    font-family: 'Lato', sans-serif;
+    color: whitesmoke;
+    background-color: whitesmoke;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+button, li{
+    cursor: pointer;
+}
+
+/*HEADER*/
+
+header{
+    width: 100vw;
+    height: 30vh;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo__header{
+    width: 20%;
+    height: 100%;
+    margin: 0 50px;
+}
+
+nav{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 55%;
+    height: 70%;
+}
+
+.nav__li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 10px;
+    font-size: 20px;
+    padding-top: 15px;
+    border-top: 3px solid transparent;
+    transition: transform .5s, color .5s, border-color .5s;
+}
+
+.nav__li:hover{
+    color: #fff77c;
+    transform: translateY(-3px);
+    border-color: #fff77c;
+}
+
+main{
+    width: 100vw;
+}
+
+/*BANNER*/
+
+.banner{
+    width: 100%;
+    height: 95vh;
+    /*USÉ ALPHA EN EL COLOR DEL GRADIENTE PARA DARLE TRANSPARENCIA Y ASÍ QUE SE PUEDA VER LA IMAGEN DE ATRÁS*/
+    background-image: linear-gradient(to right, rgba(131, 96, 195, 0.75), rgba(46, 191, 145, 0.75)), url("../img/banner.jpeg");
+    background-repeat: repeat, no-repeat;
+    background-position: 50% 10%;
+    background-size: cover;
+    /*EFECTO PARALLAX*/
+    background-attachment: fixed;
+}
+
+.banner__container p{
+    font-size: 18px;
+    margin: 0;
+}
+
+.banner__container{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 35%;
+    text-align: center;
+}
+
+.banner__title{
+   font-size: 120px;
+   text-align: center;
+   margin: 0;
+}
+
+/*BUTTONS*/
+
+button{
+    border: 2px solid transparent;
+    background-color: #fff77c;
+    color: rgb(131,96,195);
+    padding: 15px 30px;
+    margin: 20px;
+    font-weight: bold;
+    border-radius: 40px;
+    letter-spacing: 2px;
+    transition: background-color .5s, color .5s, border-color .5s, transform .5s;
+}
+
+button:hover{
+    color: #fff77c;
+    background-color: rgb(131,96,195);
+    transform: scale(1.1);
+}
+
+button:focus{
+    outline: none;
+}
+
+/*BUTTON FANTASMA*/
+
+#btn__fantasma{
+    border-color: #fff77c;
+    color: #fff77c;
+    background-color: transparent;
+}
+
+#btn__fantasma:hover{
+    color: white;
+    border-color: whitesmoke;
+}
+
+/*SECTIONS*/
+
+section{
+    padding: 50px 0;
+    width: 100%;
+}
+
+section>h2{
+    font-size: 25px;
+    color: rgb(32, 32, 32);
+}
+
+/*SECTION 1*/
+
+.section-1{
+    color: rgb(32, 32, 32);
+    text-align: center;
+    height: 450px;
+    background-color: #ECEFF1;
+}
+
+.servicios__container{
+    display: inline-block;
+    height: 380px;
+    width: 320px;
+    margin: 0 30px;
+    position: relative;
+    top: 5px;
+    border-radius: 5px;
+    box-shadow: rgb(144,164,174) 0px 0px 8px 0px;
+    background-color: whitesmoke;
+    cursor: pointer;
+    transition: transform 1.5s;
+}
+
+/*ROTATE Y*/
+
+.servicios__container:hover{
+    transform: rotateY(360deg);
+}
+
+.servicios__container img{
+    width: 75%;
+}
+
+.servicios__content{
+    width: 100%;
+    height: 92%;
+    position: absolute;
+    bottom: 0;
+}
+
+.servicios__content>h3{
+    color: rgb(131,96,195);
+    font-size: 22px;
+    margin: 0;
+}
+
+.servicios__content>p{
+    font-weight: lighter;
+}
+
+/*SECTION 2*/
+
+.section-2{
+    height: 200px;
+    background: linear-gradient(to right, rgb(131, 96, 195), rgb(46, 191, 145));
+}
+
+.section-2>p{
+    display: inline-block;
+    font-style: italic;
+    font-size: 45px;
+    line-height: 110px;
+    position: relative;
+    left: 5%;
+}
+
+.section-2>button{
+    position: relative;
+    left: 30%;
+    margin: 0;
+}
+
+/*SECTION 3*/
+
+.section-3{
+    text-align: center;
+    height: 300px;
+}
+
+.clientes__container{
+    width: 100%;
+    height: 75%;
+    position: relative;
+    top: 7%;
+}
+.clientes__content{
+    height: 50%;
+    width: 10%;
+    display: inline-block;
+    margin: 0 2%;
+    cursor: pointer;
+}
+
+.clientes__content:hover>img{
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+/*ROTATE Z*/
+
+.clientes__content:hover>img[alt="google"], .clientes__content:hover>img[alt="pepsi"]{
+    transform: rotateZ(360deg);
+}
+
+/*ROTATE Y*/
+
+.clientes__content:hover>img[alt="samsung"], .clientes__content:hover>img[alt="twitter"]{
+    transform: rotateY(360deg);
+}
+
+/*ROTATE X*/
+
+.clientes__content:hover>img[alt="apple"]{
+    transform: rotateX(360deg);
+}
+
+.clientes__content img{
+    display: inline-block;
+    vertical-align: middle;
+    transition: transform 1.5s, filter 1s ease .75s, opacity 1s;
+    filter: grayscale(100%);
+    opacity: .5;
+}
+
+#samsung{
+    width: 12%;
+    height: 60%;
+}
+
+/*FOOTER*/
+
+footer{
+    background: linear-gradient(to right, rgb(131, 96, 195), rgb(46, 191, 145));
+    height: 50vh;
+    text-align: center;
+}
+
+.footer__logo{
+    height: 70%;
+}
+
+.footer__logo:after{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 8%; 
+    border-bottom: 3px solid whitesmoke;
+}
+
+footer>h4{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+span{
+    font-weight: bold;
+}
